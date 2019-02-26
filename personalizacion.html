@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+   File Created for
+   Rimorsoft Online | rimorsoft.com    Created on : 25/09/2016, 01:27:12 PM
+   Author     : Italo Morales - @italomoralesf
+-->
+<html>
+   <head>
+       <title>Menú, HTML y CSS - Rimorsoft Online</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+       <link href="css/style.css" rel="stylesheet" type="text/css" >
+   </head>
+   <body>        <nav class="menu-main">
+           <a href="index.html" class="active">Home</a>
+           <a href="informes.html">Informes</a>
+           <a href="personalizacion.html">Personalización</a>
+           <a href="administrador.html">Administrador</a>
+           <a href="comentarios.html">Comentarios</a>
+           <a href="perfil.html">Perfíl</a>
+           <a href="ayuda.html">Ayuda</a>
+       </nav>    
+      <h2>Personalizacion</h2>
+      <!--
+   El HTML es muy sencillo. Dentro del <div class="galeria"> tenemos 4 imágenes y 4 botones de radio,
+   uno para cada imagen. De hecho los botones vienen primero porque, en el CSS, quiero utilizar
+   la tilde ( ~ ). Como ya se sabe el selector elemento1 ~ elemento2 selecciona cada elemento2 precedido
+   por un elemento1, y el selector input ~ img selecciona cada img  precedida por un input.
+   Observe por favor que el primer botón de radio está activado ( checked ).
+-->
+<div class="contenedor">
+<h2 class="titulo2">Galeria de Imagnes</h2><div class="galeria marco">
+ <input type="radio" name="navegacion" id="_1" checked>
+ <input type="radio" name="navegacion" id="_2">
+ <input type="radio" name="navegacion" id="_3">
+ <input type="radio" name="navegacion" id="_4">
+ <img src="img/carretera.jpg" width="260" height="300" alt="Galeria CSS 1" />
+ <img src="img/nieve.jpeg" width="260" height="300" alt="Galeria CSS 2"  />
+ <img src="img/piscina.jpg" width="260" height="300" alt="Galeria CSS 3" />
+ <img src="img/torres.jpg" width="260" height="300" alt="Galeria CSS 4" />
+</div><div class="galeria marco">
+ <input type="radio" name="navigation2" id="_1" >
+ <input type="radio" name="navigation2" id="_2">
+ <input type="radio" name="navigation2" id="_3" checked>
+ <input type="radio" name="navigation2" id="_4">
+ <img src="img/1.jpg" width="260" height="300" alt="Galeria CSS 1" />
+ <img src="img/2.jpg" width="260" height="300" alt="Galeria CSS 2"  />
+ <img src="img/3.jpeg" width="260" height="300" alt="Galeria CSS 3" />
+ <img src="img/4.jpg" width="260" height="300" alt="Galeria CSS 4" />
+</div><!--http://w3.unpocodetodo.info/css3/galeria-de-imagenes-css1.php--></div>
+Entrada de mensaje
+
+     </body>
+</html>

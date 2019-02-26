@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+   File Created for
+   Rimorsoft Online | rimorsoft.com    Created on : 25/09/2016, 01:27:12 PM
+   Author     : Italo Morales - @italomoralesf
+-->
+<html>
+   <head>
+       <title>Menú, HTML y CSS - Rimorsoft Online</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+       <link href="css/style.css" rel="stylesheet" type="text/css" >
+   </head>
+   <body>        <nav class="menu-main">
+           <a href="index.html" class="active">Home</a>
+           <a href="informes.html">Informes</a>
+           <a href="personalizacion.html">Personalización</a>
+           <a href="administrador.html">Administrador</a>
+           <a href="comentarios.html">Comentarios</a>
+           <a href="perfil.html">Perfíl</a>
+           <a href="ayuda.html">Ayuda</a>
+       </nav>    
+    <h1>Bienvenidos a WEB</h1>
+    <div class="w3-content w3-display-container">
+ <img class="mySlides" src="img/banner1.gif" >
+ <img class="mySlides" src="img/banner2.jpg" >
+ <img class="mySlides" src="img/banner3.jpg" >
+</div><script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+   var myIndex = 0;
+   carousel();    function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides");
+       for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}
+       x[myIndex-1].style.display = "block";
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+   }
+</script>
+
+     </body>
+</html>
+Entrada de mensaje
